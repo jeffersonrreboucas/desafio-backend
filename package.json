@@ -4,11 +4,12 @@
   "description": "Pingback backend challenge CRUD",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "Jefferson Rebouças",
   "license": "ISC",
   "dependencies": {
+    "@faker-js/faker": "^7.3.0",
     "bcryptjs": "^2.4.3",
     "cloudinary": "^1.30.0",
     "dotenv": "^16.0.1",
@@ -23,6 +24,8 @@
     "uuid": "^8.3.2"
   },
   "devDependencies": {
-    "sequelize-cli": "^6.4.1"
+    "jest": "^28.1.2",
+    "sequelize-cli": "^6.4.1",
+    "supertest": "^6.2.4"
   }
 }

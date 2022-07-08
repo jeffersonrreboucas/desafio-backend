@@ -204,7 +204,10 @@ App.post('/text/:id/audio', authMiddleware, async (req, res) => {
     }
 });
 
-        
-App.listen(3000, () => {
-    console.log('servidor rodando...');
-});
+if (process.env.NODE_ENV !== 'test') {
+    App.listen(3000, () => {
+        console.log('servidor rodando...');
+    });
+};
+
+module.exports = App;
